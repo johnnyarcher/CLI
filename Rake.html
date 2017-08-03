@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Rake Tasks</title>
+ 
+</head>
+<body>
+
+
+<h3>Rake is invoked from the command line using:</h3>
+
+<pre>% rake [options ...]  [VAR=VALUE ...]  [targets ...]
+Options are:</pre>
+
+<code>name=value</code>
+<p>Set the environment variable name to value during the execution of the rake command. You can access the value by using ENV.</p>
+
+<code>--all (-A)</code>
+<p>Used in combination with the -T and -D options, will force those options to show all the tasks, even the ones without comments.</p>
+
+<code>--backtrace{=output} (-n)</code>
+<p>Enable a full backtrace (i.e. like –trace, but without the task tracing details). The output parameter is optional, but if specified it controls where the backtrace output is sent. If output is stdout, then backtrace output is directed to standard output. If output is stderr, or if it is missing, then the backtrace output is sent to standard error.</p>
+
+<code>--comments</code>
+<p>Used in combination with the -W options to force the output to contain commented options only. This is the reverse of --all.</p>
+
+<code>--describe pattern (-D)</code>
+<p>Describe the tasks (matching optional PATTERN), then exit.
+
+<code>--dry-run (-n)</code>
+<p>Do a dry run. Print the tasks invoked and executed, but do not actually execute any of the actions.</p>
+
+<code>--execute code (-e)</code>
+<p>Execute some Ruby code and exit.</p>
+
+<code>--execute-print code (-p)</code>
+<p>Execute some Ruby code, print the result, and exit.</p>
+
+<code>--execute-continue code (-E)</code>
+<p>Execute some Ruby code, then continue with normal task processing.</p>
+
+<code>--help (-H)</code>
+<p>Display some help text and exit.</p>
+
+<code>--jobs number (-j)</code>
+<p>Specifies the maximum number of concurrent threads allowed. Rake will allocate threads as needed up to this maximum number.</p>
+
+<p>If omitted, Rake will attempt to estimate the number of CPUs on the system and add 4 to that number.</p>
+
+<p>The concurrent threads are used to execute the multitask prerequisites. Also see the -m option which turns all tasks into multitasks.</p>
+
+
+</body>
+<footer>
+</footer>
+
+ 
